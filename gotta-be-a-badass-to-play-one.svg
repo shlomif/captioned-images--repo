@@ -73,8 +73,8 @@
        width="2536px" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;line-height:200px;font-family:'Blue Highway';-inkscape-font-specification:'Blue Highway';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:3.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="-148.84641"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;line-height:200px;font-family:'Blue Highway';-inkscape-font-specification:'Blue Highway';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:3.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       x="756.62"
        y="664.43164"
        id="text881"><tspan
          sodipodi:role="line"
@@ -93,41 +93,45 @@
          x="-148.84641"
          y="1264.4316"
          id="tspan47">IN THE MOVIES! </tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;line-height:200px;font-family:'Blue Highway';-inkscape-font-specification:'Blue Highway';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:3.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="-148.84641"
-       y="1669.5171"
-       id="text71"><tspan
-         sodipodi:role="line"
+    <g
+       id="g98"
+       transform="translate(0,516)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;line-height:200px;font-family:'Blue Highway';-inkscape-font-specification:'Blue Highway';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:3.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          x="-148.84641"
          y="1669.5171"
-         id="tspan69">Arnold </tspan></text>
-    <g
-       id="g834"
-       transform="translate(-1086.7138,1119.1129)"
-       style="fill:#d40000;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
-      <text
-         id="text832"
-         y="808.39166"
-         x="940.45068"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;line-height:200px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#d40000;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:266.667px;font-family:'Blue Highway';-inkscape-font-specification:'Blue Highway Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#d40000;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="text71"><tspan
+           sodipodi:role="line"
+           x="-148.84641"
+           y="1669.5171"
+           id="tspan69">Arnold </tspan></text>
+      <g
+         id="g834"
+         transform="translate(-1086.7138,1108.4508)"
+         style="fill:#d40000;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+        <text
+           id="text832"
            y="808.39166"
            x="940.45068"
-           id="tspan830"
-           sodipodi:role="line">@Schwarzenegger</tspan></text>
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;line-height:200px;font-family:'Blue Highway';-inkscape-font-specification:'Blue Highway';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:3.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="-108.72362"
-       y="2188.0342"
-       id="text89"><tspan
-         sodipodi:role="line"
-         x="-108.72362"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;line-height:200px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#d40000;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:266.667px;font-family:'Blue Highway';-inkscape-font-specification:'Blue Highway Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#d40000;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             y="808.39166"
+             x="940.45068"
+             id="tspan830"
+             sodipodi:role="line">@Schwarzenegger</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;line-height:200px;font-family:'Blue Highway';-inkscape-font-specification:'Blue Highway';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:3.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="-150.17973"
          y="2188.0342"
-         id="tspan87">at your service!</tspan></text>
+         id="text89"><tspan
+           sodipodi:role="line"
+           x="-150.17973"
+           y="2188.0342"
+           id="tspan87">at your service!</tspan></text>
+    </g>
   </g>
 </svg>
