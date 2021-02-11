@@ -26,7 +26,7 @@ edit it type:
 
     inkscape ./gotta-be-a-badass-to-play-one.svg
 
-To build everything use https://www.gnu.org/software/make/[GNU make] .
+To build everything use https://www.gnu.org/software/make/[GNU make].
 
 [id="creators"]
 Creator:
@@ -41,4 +41,15 @@ Links:
 * https://twitter.com/Schwarzenegger[@Schwarzenegger on Twitter]
 * https://www.shlomifish.org/humour/Terminator/Liberation/[“Terminator: Liberation” - An Illustrated Screenplay for a Terminator parody]
 * https://en.wikipedia.org/wiki/File:Arnold_Schwarzenegger_by_Gage_Skidmore_4.jpg[File:Arnold Schwarzenegger by Gage Skidmore 4.jpg - Wikipedia]
-** By http://www.gageskidmore.com/[Gage Skidmore]
+** By: http://www.gageskidmore.com/[Gage Skidmore]
+
+The meme that inspired the screenplay:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[quote, Shlomi Fish, https://www.shlomifish.org/humour/fortunes/show.cgi?id=shlomif-fact-emma-watson-11]
+____
+It might seem preposterous to believe Emma Watson is the new Arnold
+Schwarzenegger just because they were both Hollywood's best paid actors and you
+would be right. Emma Watson is not the new Arnold Schwarzenegger. But Arnold
+Schwarzenegger will forever be remembered as the old EMMA FUCKIN' WATSON!
+____
