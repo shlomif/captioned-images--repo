@@ -8,8 +8,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1052.36"
-   height="744.09003"
+   width="1055.8604"
+   height="1586.2048"
    id="svg2"
    version="1.1"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.50262735"
+     inkscape:zoom="0.47156583"
      inkscape:cx="527.93019"
-     inkscape:cy="372.04501"
+     inkscape:cy="793.10242"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -53,7 +53,7 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title>Demotivational Poster Template</dc:title>
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
         <dc:date>2011-10-31</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -70,7 +70,7 @@
         </dc:subject>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
@@ -90,32 +90,15 @@
      inkscape:label="Livello 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(154.13498,-154.13715)">
-    <image
-       sodipodi:absref="/home/shlomif/Docs/homepage/homepage/trunk--clones/captioned-images--repo/sic-transit-gloria--j-law/Jennifer_Lawrence_at_San_Diego_Comic-Con_2015.jpg"
-       xlink:href="Jennifer_Lawrence_at_San_Diego_Comic-Con_2015.jpg"
-       width="814"
-       height="1220.6187"
-       preserveAspectRatio="none"
-       style="image-rendering:optimizeQuality"
-       id="image142"
-       x="-34.954987"
-       y="-586.48145" />
+     transform="translate(154.13498,687.97766)">
     <rect
-       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:14.6005;marker:none;enable-background:accumulate"
        id="rect3004"
-       width="744.09003"
+       width="1586.2048"
        height="1052.36"
        x="-898.22717"
        y="-154.13498"
-       transform="matrix(0,-1,1,0,0,0)" />
-    <rect
-       y="179.13721"
-       x="-49.954987"
-       height="470"
-       width="844"
-       id="rect3006"
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate" />
+       transform="rotate(-90)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none"
@@ -155,8 +138,8 @@
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
          id="path3906"
-         d="m 82.03869,738.78736 592.15773,0"
-         style="fill:#ffffff;stroke:#ffffff;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+         d="M 82.03869,738.78736 H 674.19642"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:3.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <text
          id="text4171"
          y="745.49207"
@@ -174,6 +157,26 @@
    dy="17"
    id="tspan4177"
    style="font-size:100px;letter-spacing:5px">L</tspan></tspan></text>
+    </g>
+    <g
+       id="g25">
+      <rect
+         y="-604.12628"
+         x="-49.954987"
+         height="1253.2634"
+         width="844"
+         id="rect3006"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:16.3295;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate" />
+      <image
+         sodipodi:absref="/home/shlomif/Docs/homepage/homepage/trunk--clones/captioned-images--repo/sic-transit-gloria--j-law/Jennifer_Lawrence_at_San_Diego_Comic-Con_2015.jpg"
+         xlink:href="Jennifer_Lawrence_at_San_Diego_Comic-Con_2015.jpg"
+         y="-586.48145"
+         x="-34.954987"
+         id="image142"
+         style="image-rendering:optimizeQuality"
+         preserveAspectRatio="none"
+         height="1220.6187"
+         width="814" />
     </g>
   </g>
 </svg>
