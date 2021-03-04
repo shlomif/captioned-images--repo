@@ -1,0 +1,24 @@
+=encoding utf8
+
+=head1 Captioned Image - Friends T.V. Show “Nothing Sexier”
+
+=head2 About
+
+This repository contains the sources for a captioned image. To view or
+edit it type:
+
+    inkscape ./Nothing-Sexier.svg
+
+Image still ( C<Friends-S02E04--vlcsnap-2014-09-28-22h58m54s138.jpg>) taken
+from Episode S02E04 of the television show Friends.
+
+The final image can be viewed online here:
+
+L<http://www.shlomifish.org/nothing-sexier/>
+
+=head2 Creator
+
+L<http://www.shlomifish.org/> - Shlomi Fish.
+
+=cut
+
