@@ -7,11 +7,16 @@ CUT_HEIGHT := 1114
 HEIGHT_CUT_JLAW := Jennifer_Lawrence_at_San_Diego_Comic-Con_2015--height$(CUT_HEIGHT)px.png
 SRC := Jennifer_Lawrence_at_San_Diego_Comic-Con_2015.jpg
 
+WIDTH := 1067
+WIDTH := 100%
+WIDTH :=
+
 all: $(HEIGHT_CUT_JLAW)
 
 $(HEIGHT_CUT_JLAW): $(SRC)
 	# gm convert -crop "100%"x$(CUT_HEIGHT)+0+0 $< $@
-	gm convert -crop "1067"x$(CUT_HEIGHT)+0+0 $< $@
+	gm convert $< -gravity north -crop "$(WIDTH)"x$(CUT_HEIGHT)+0+0 $@
+	# optipng -o7 $@
 
 clean:
 	rm -f $(HEIGHT_CUT_JLAW)
