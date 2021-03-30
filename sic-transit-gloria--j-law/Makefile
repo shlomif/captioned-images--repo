@@ -8,8 +8,8 @@ HEIGHT_CUT_JLAW := Jennifer_Lawrence_at_San_Diego_Comic-Con_2015--height$(CUT_HE
 SRC := Jennifer_Lawrence_at_San_Diego_Comic-Con_2015.jpg
 
 WIDTH := 1067
-WIDTH := 100%
-WIDTH :=
+# WIDTH := 100%
+# WIDTH :=
 
 all: $(HEIGHT_CUT_JLAW)
 
