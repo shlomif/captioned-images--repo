@@ -7,7 +7,7 @@ CUT_HEIGHT := 1114
 HEIGHT_CUT_JLAW := Jennifer_Lawrence_at_San_Diego_Comic-Con_2015--height$(CUT_HEIGHT)px.png
 SRC := Jennifer_Lawrence_at_San_Diego_Comic-Con_2015.jpg
 
-WIDTH := 1067
+WIDTH := $(shell imgsize -r "$(SRC)" | perl -lnaE 'print $$F[0]')
 # WIDTH := 100%
 # WIDTH :=
 
