@@ -10,12 +10,13 @@ SRC := Jennifer_Lawrence_at_San_Diego_Comic-Con_2015.jpg
 all: $(HEIGHT_CUT_JLAW)
 
 $(HEIGHT_CUT_JLAW): $(SRC)
-	gm convert $< -crop "100%"x$(CUT_HEIGHT) $@
+	# gm convert -crop "100%"x$(CUT_HEIGHT)+0+0 $< $@
+	gm convert -crop "1067"x$(CUT_HEIGHT)+0+0 $< $@
 
 clean:
 	rm -f $(HEIGHT_CUT_JLAW)
 
-view: clean all
+view: test
 	gwenview $(HEIGHT_CUT_JLAW)
 
 test: clean all
