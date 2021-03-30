@@ -8,12 +8,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1055.8604"
-   height="1586.2048"
+   width="1052.36"
+   height="1226.9635"
    id="svg2"
    version="1.1"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="sic-transit-gloria--j-law--Demotivational_Poster.svg">
+   sodipodi:docname="s.svg">
   <title
      id="title3960">Demotivational Poster Template</title>
   <defs
@@ -26,15 +26,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.47156583"
-     inkscape:cx="527.93019"
-     inkscape:cy="793.10242"
+     inkscape:cx="471.73443"
+     inkscape:cy="433.86109"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1152"
-     inkscape:window-height="753"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
      inkscape:window-x="0"
-     inkscape:window-y="32"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -90,11 +90,11 @@
      inkscape:label="Livello 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(154.13498,687.97766)">
+     transform="translate(154.13498,328.73633)">
     <rect
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:14.6005;marker:none;enable-background:accumulate"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12.8412;marker:none;enable-background:accumulate"
        id="rect3004"
-       width="1586.2048"
+       width="1226.9635"
        height="1052.36"
        x="-898.22717"
        y="-154.13498"
@@ -159,7 +159,8 @@
    style="font-size:100px;letter-spacing:5px">W</tspan></tspan></text>
     </g>
     <g
-       id="g25">
+       id="g25"
+       transform="matrix(1.0030711,0,0,0.70556793,-1.1425775,196.62632)">
       <rect
          y="-604.12628"
          x="-49.954987"
@@ -168,15 +169,15 @@
          id="rect3006"
          style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:16.3295;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate" />
       <image
-         sodipodi:absref="/home/shlomif/Docs/homepage/homepage/trunk--clones/captioned-images--repo/sic-transit-gloria--j-law/Jennifer_Lawrence_at_San_Diego_Comic-Con_2015.jpg"
-         xlink:href="Jennifer_Lawrence_at_San_Diego_Comic-Con_2015.jpg"
-         y="-586.48145"
-         x="-34.954987"
-         id="image142"
-         style="image-rendering:optimizeQuality"
-         preserveAspectRatio="none"
+         sodipodi:absref="/home/shlomif/Docs/homepage/homepage/trunk/lib/repos/captioned-images--repo/sic-transit-gloria--j-law/Jennifer_Lawrence_at_San_Diego_Comic-Con_2015--height1114px.png"
+         xlink:href="Jennifer_Lawrence_at_San_Diego_Comic-Con_2015--height1114px.png"
+         width="814"
          height="1220.6187"
-         width="814" />
+         preserveAspectRatio="none"
+         style="image-rendering:optimizeQuality"
+         id="image142"
+         x="-34.954987"
+         y="-586.48145" />
     </g>
   </g>
 </svg>
