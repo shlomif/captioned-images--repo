@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.47156583"
-     inkscape:cx="471.73443"
-     inkscape:cy="433.86109"
+     inkscape:zoom="0.6829869"
+     inkscape:cx="526.17999"
+     inkscape:cy="613.48175"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -91,42 +91,41 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(154.13498,328.73633)">
-    <rect
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12.8412;marker:none;enable-background:accumulate"
-       id="rect3004"
-       width="1226.9635"
-       height="1052.36"
-       x="-898.22717"
-       y="-154.13498"
-       transform="rotate(-90)" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;line-height:0%;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none"
-       x="372.21783"
-       y="844.23517"
-       id="text3824"><tspan
-         sodipodi:role="line"
+    <g
+       id="g859">
+      <rect
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12.8412;marker:none;enable-background:accumulate"
+         id="rect3004"
+         width="1226.9635"
+         height="1052.36"
+         x="-898.22717"
+         y="-154.13498"
+         transform="rotate(-90)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;line-height:0%;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none"
          x="372.21783"
          y="844.23517"
-         id="tspan3882"
-         style="font-size:48px;line-height:1.25">“You used to be Sarah Michelle Who??”</tspan></text>
-    <g
-       id="g4187"
-       transform="translate(-3.6697429e-8,5.7475931)">
+         id="text3824"><tspan
+           sodipodi:role="line"
+           x="372.21783"
+           y="844.23517"
+           id="tspan3882"
+           style="font-size:48px;line-height:1.25">“You used to be Sarah Michelle Who??”</tspan></text>
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
          id="path3906"
-         d="M 82.03869,738.78736 H 674.19642"
-         style="fill:#ffffff;stroke:#ffffff;stroke-width:3.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         d="m 66.03869,744.53495 h 609.158"
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:3.2457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <text
          id="text4171"
-         y="745.49207"
+         y="751.23969"
          x="3.4414971"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:5px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            dy="0 -17"
-           y="745.49207"
+           y="751.23969"
            x="3.4414971"
            id="tspan4173"
            sodipodi:role="line"
@@ -136,27 +135,27 @@
    dy="17"
    id="tspan4177"
    style="font-size:100px;letter-spacing:5px">W</tspan></tspan></text>
-    </g>
-    <g
-       id="g25"
-       transform="matrix(1.0030711,0,0,0.70556793,-1.1425775,196.62632)">
-      <rect
-         y="-604.12628"
-         x="-49.954987"
-         height="1253.2634"
-         width="844"
-         id="rect3006"
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:16.3295;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate" />
-      <image
-         sodipodi:absref="/home/shlomif/Docs/homepage/homepage/trunk/lib/repos/captioned-images--repo/sic-transit-gloria--j-law/Jennifer_Lawrence_at_San_Diego_Comic-Con_2015--height1114px.png"
-         xlink:href="Jennifer_Lawrence_at_San_Diego_Comic-Con_2015--height1114px.png"
-         width="814"
-         height="1220.6187"
-         preserveAspectRatio="none"
-         style="image-rendering:optimizeQuality"
-         id="image142"
-         x="-34.954987"
-         y="-586.48145" />
+      <g
+         id="g25"
+         transform="matrix(1.0030711,0,0,0.70556793,-1.1425775,196.62632)">
+        <rect
+           y="-604.12628"
+           x="-49.954987"
+           height="1253.2634"
+           width="844"
+           id="rect3006"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:16.3295;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate" />
+        <image
+           sodipodi:absref="/home/shlomif/Docs/homepage/homepage/trunk/lib/repos/captioned-images--repo/sic-transit-gloria--j-law/Jennifer_Lawrence_at_San_Diego_Comic-Con_2015--height1114px.png"
+           xlink:href="Jennifer_Lawrence_at_San_Diego_Comic-Con_2015--height1114px.png"
+           y="-586.48145"
+           x="-34.954987"
+           id="image142"
+           style="image-rendering:optimizeQuality"
+           preserveAspectRatio="none"
+           height="1220.6187"
+           width="814" />
+      </g>
     </g>
   </g>
 </svg>
