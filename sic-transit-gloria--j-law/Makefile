@@ -24,7 +24,7 @@ $(HEIGHT_CUT_JLAW): $(SRC)
 	# optipng -o7 $@
 
 $(PNG): $(SVG) $(PHOTO_DEST) $(HEIGHT_CUT_JLAW)
-	inkscape --export-png=$@ --export-width=$(WIDTH) $<
+	inkscape --export-filename=$@ --export-width=$(WIDTH) $<
 	optipng $@
 
 $(WEBP): $(PNG)
@@ -36,11 +36,11 @@ $(JPEG): $(PNG)
 clean:
 	rm -f $(HEIGHT_CUT_JLAW)
 
-view: test
+view: test $(HEIGHT_CUT_JLAW)
 	gwenview $(HEIGHT_CUT_JLAW)
 
-test: clean all
-	perl -E 'use Image::Size qw/ imgsize /; my (undef, $$h) = (imgsize(shift)); die "h==$$h" if $$h != shift' -- "$(HEIGHT_CUT_JLAW)" "$(CUT_HEIGHT)"
+test: clean all $(HEIGHT_CUT_JLAW)
+	perl -E 'use strict; use warnings; use Image::Size qw/ imgsize /; my (undef, $$h) = (imgsize(shift)); die "h==$$h" if $$h != shift' "$(HEIGHT_CUT_JLAW)" "$(CUT_HEIGHT)"
 
 # vim:ft=make
 #
