@@ -1,6 +1,6 @@
 WIDTH = 600
 
-BASE = captioned-image--badass-fluttershy--terminator-liberation
+BASE = captioned-image--friends--phoebe--it-is-too-easy
 SVG = $(BASE).svg
 DESTBASE = $(BASE)-$(WIDTH)
 DESTBASE_default = $(SVG)
@@ -18,12 +18,12 @@ NOBRANDING_PERSON_PNG = $(NOBRANDING_PERSON_SVG).png
 NOBRANDING_PERSON_JPEG = $(NOBRANDING_PERSON_SVG).jpg
 NOBRANDING_PERSON_WEBP = $(NOBRANDING_PERSON_SVG).webp
 
-PHOTO_DEST = d5gxovp-14e90c16-410d-4433-b1ba-c7af00bb53cb.png
+EMBEDDED_PHOTO1__PATH = d5gxovp-14e90c16-410d-4433-b1ba-c7af00bb53cb.png
 
 all: $(PNG) $(JPEG) $(WEBP)
 # all: $(NOBRANDING_PERSON_PNG) $(NOBRANDING_PERSON_WEBP) $(NOBRANDING_PERSON_JPEG) $(NOBRANDING_PERSON_PNG)
 
-$(PNG): $(SVG) $(PHOTO_DEST)
+$(PNG): $(SVG) $(EMBEDDED_PHOTO1__PATH)
 	inkscape --export-png=$@ --export-width=$(WIDTH) $<
 	optipng $@
 
@@ -36,7 +36,7 @@ $(WEBP): $(PNG)
 $(JPEG): $(PNG)
 	gm convert $< $@
 
-$(THIRD_PERSON_PNG): $(THIRD_PERSON_SVG) $(PHOTO_DEST)
+$(THIRD_PERSON_PNG): $(THIRD_PERSON_SVG) $(EMBEDDED_PHOTO1__PATH)
 	inkscape --export-png=$@ --export-width=$(WIDTH) $<
 	optipng $@
 
@@ -46,7 +46,7 @@ $(THIRD_PERSON_WEBP): $(THIRD_PERSON_PNG)
 $(THIRD_PERSON_JPEG): $(THIRD_PERSON_PNG)
 	gm convert $< $@
 
-$(NOBRANDING_PERSON_PNG): $(NOBRANDING_PERSON_SVG) $(PHOTO_DEST)
+$(NOBRANDING_PERSON_PNG): $(NOBRANDING_PERSON_SVG) $(EMBEDDED_PHOTO1__PATH)
 	inkscape --export-png=$@ --export-width=$(WIDTH) $<
 	optipng $@
 
