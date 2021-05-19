@@ -8,8 +8,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1109"
-   height="632"
+   width="1113"
+   height="634"
    id="svg2"
    version="1.1"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
@@ -27,8 +27,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.63802083"
-     inkscape:cx="395.85714"
-     inkscape:cy="856.28571"
+     inkscape:cx="626.72199"
+     inkscape:cy="374.66871"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -61,7 +61,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-228.86485,481.617)">
+     transform="translate(2)">
     <image
        sodipodi:absref="/home/shlomif/Docs/homepage/homepage/trunk/lib/repos/captioned-images--repo/friends--phoebe--it-is-too-easy/friends--phoebe--too-easy--when-arguing-about-evolution.png"
        xlink:href="friends--phoebe--too-easy--when-arguing-about-evolution.png"
@@ -70,7 +70,14 @@
        preserveAspectRatio="none"
        style="image-rendering:optimizeQuality"
        id="image156"
-       x="228.86485"
-       y="-481.617" />
+       y="0"
+       x="0" />
+    <rect
+       style="color:#000000;overflow:visible;fill:none;stroke:#000000;stroke-width:4;stop-color:#000000"
+       id="rect8"
+       width="1109"
+       height="50"
+       y="582"
+       x="0" />
   </g>
 </svg>
