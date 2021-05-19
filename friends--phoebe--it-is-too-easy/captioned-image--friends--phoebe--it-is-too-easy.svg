@@ -72,7 +72,7 @@
        y="0"
        x="0" />
     <rect
-       style="overflow:visible;fill:none;"
+       style="background: white; overflow:visible;fill:none;"
        id="rect8"
        width="1109"
        height="50"
