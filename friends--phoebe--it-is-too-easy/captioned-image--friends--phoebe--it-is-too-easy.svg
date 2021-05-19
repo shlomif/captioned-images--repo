@@ -26,7 +26,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.63802083"
+     inkscape:zoom="0.5"
      inkscape:cx="626.72199"
      inkscape:cy="374.66871"
      inkscape:document-units="px"
@@ -53,7 +53,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -64,13 +64,13 @@
     <image
        sodipodi:absref="/home/shlomif/Docs/homepage/homepage/trunk/lib/repos/captioned-images--repo/friends--phoebe--it-is-too-easy/friends--phoebe--too-easy--when-arguing-about-evolution.png"
        xlink:href="friends--phoebe--too-easy--when-arguing-about-evolution.png"
-       width="1109"
-       height="582"
-       preserveAspectRatio="none"
-       style="image-rendering:optimizeQuality"
-       id="image156"
+       x="0"
        y="0"
-       x="0" />
+       id="image156"
+       style="image-rendering:optimizeQuality"
+       preserveAspectRatio="none"
+       height="582"
+       width="1109" />
     <rect
        style="background: white; overflow:visible;fill:none;"
        id="rect8"
@@ -78,5 +78,16 @@
        height="50"
        y="582"
        x="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:30.72px;line-height:64px;font-family:Arial;-inkscape-font-specification:'Arial Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ff0000;stroke:#000000;stroke-width:0.32px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="13.289665"
+       y="613.17719"
+       id="text11"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         x="13.289665"
+         y="613.17719"
+         style="stroke-width:0.32px">http://youtu.be/6rvPP-IgYJk</tspan></text>
   </g>
 </svg>
