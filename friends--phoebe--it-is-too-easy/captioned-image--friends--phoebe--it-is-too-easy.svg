@@ -64,13 +64,13 @@
     <image
        sodipodi:absref="/home/shlomif/Docs/homepage/homepage/trunk/lib/repos/captioned-images--repo/friends--phoebe--it-is-too-easy/friends--phoebe--too-easy--when-arguing-about-evolution.png"
        xlink:href="friends--phoebe--too-easy--when-arguing-about-evolution.png"
-       x="0"
-       y="0"
-       id="image156"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
+       width="1109"
        height="582"
-       width="1109" />
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image156"
+       y="0"
+       x="0" />
     <rect
        style="background: white; overflow:visible;fill:none;"
        id="rect8"
@@ -89,5 +89,16 @@
          x="20.135002"
          y="614.95001"
          style="stroke-width:0.32px">http://youtu.be/6rvPP-IgYJk</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.88px;line-height:81px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.405px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="764.38263"
+       y="615.24872"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         x="764.38263"
+         y="615.24872"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.88px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0.405px">shlomifish.org</tspan></text>
   </g>
 </svg>
