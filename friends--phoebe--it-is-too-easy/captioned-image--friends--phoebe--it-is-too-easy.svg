@@ -100,23 +100,47 @@
          x="764.38263"
          y="615.24872"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.88px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0.405px">shlomifish.org</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-weight:bold;font-size:96px;line-height:100px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="770.30029"
-       y="311.78125"
-       id="text19"><tspan
-         sodipodi:role="line"
-         id="tspan17"
+    <g
+       id="g29"
+       transform="matrix(0.9025,0,0,0.9025,107.46164,78.800917)">
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:96px;line-height:100px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="770.30029"
-         y="311.78125">IT'S</tspan><tspan
-         sodipodi:role="line"
-         x="770.30029"
-         y="411.78125"
-         id="tspan23">TOO</tspan><tspan
-         sodipodi:role="line"
-         x="770.30029"
+         y="311.78125"
+         id="text19"><tspan
+           sodipodi:role="line"
+           id="tspan17"
+           x="770.30029"
+           y="311.78125">IT'S</tspan><tspan
+           sodipodi:role="line"
+           x="770.30029"
+           y="411.78125"
+           id="tspan23">TOO</tspan><tspan
+           sodipodi:role="line"
+           x="770.30029"
+           y="511.78125"
+           id="tspan21">EASY</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:96px;line-height:100px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="706.30029"
+         y="311.78125"
+         id="text24"><tspan
+           sodipodi:role="line"
+           x="706.30029"
+           y="311.78125"
+           id="tspan22">“</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:96px;line-height:100px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="1040.3003"
          y="511.78125"
-         id="tspan21">EASY</tspan></text>
+         id="text32"><tspan
+           sodipodi:role="line"
+           x="1040.3003"
+           y="511.78125"
+           id="tspan30">”</tspan></text>
+    </g>
   </g>
 </svg>
