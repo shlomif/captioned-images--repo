@@ -1,0 +1,31 @@
+Captioned Image - «One does not simply say "no" to an Alpha Female»
+===================================================================
+
+[id="preview"]
+Preview:
+--------
+
+image::./one-does-not-simply-say-no-to-an-alpha-female.svg.webp[One does not simply say "no" to an Alpha Female]
+
+[id="about"]
+About:
+------
+
+This repository contains the sources for a captioned image. To view or
+edit it type:
+
+    inkscape ./one-does-not-simply-say-no-to-an-alpha-female.svg
+
+To build everything use https://www.gnu.org/software/make/[GNU make] .
+
+[id="creators"]
+Creator:
+--------
+
+https://www.shlomifish.org/[Shlomi Fish].
+
+[id="credits"]
+Credits:
+--------
+
+Background image taken from https://knowyourmeme.com/memes/one-does-not-simply-walk-into-mordor[Know Your Meme] based on https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)[the LotR films]
