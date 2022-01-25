@@ -1,6 +1,6 @@
 WIDTH = 600
 
-BASE = one-does-not-simply-read-tolkiens-lotr
+BASE = one-does-not-simply-be-100percent-original
 SVG = $(BASE).svg
 DESTBASE = $(BASE)-$(WIDTH)
 DESTBASE_default = $(SVG)
