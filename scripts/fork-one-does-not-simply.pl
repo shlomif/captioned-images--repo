@@ -24,6 +24,14 @@ sub mutate
     return;
 }
 
+sub bn_mutate
+{
+    my $ref = shift();
+    ${$ref} =~ s#-read-tolkiens-lotr(\.svg)\z#-see-a-meme-only-once$1#
+        or die;
+    return;
+}
+
 sub run
 {
     my $output_fn;
@@ -50,6 +58,10 @@ sub run
             cmd => [ "cp", "-a", "$orig/", $new_base, ],
         },
     );
+    my $fn1 = "$new_base/one-does-not-simply-read-tolkiens-lotr.svg";
+    my $fn2 = $fn1;
+    bn_mutate( \$fn2 );
+    rename( $fn1, $fn2 );
 
     exit(0);
 }
