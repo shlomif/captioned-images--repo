@@ -52,6 +52,7 @@ sub run
     my $orig     = "One-does-not-Simply-Read-LotR";
     my $new_base = $orig;
     mutate( \$new_base );
+    path($new_base)->remove_tree();
 
     $obj->do_system(
         {
