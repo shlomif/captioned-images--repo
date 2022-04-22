@@ -12,6 +12,7 @@ use warnings;
 use 5.014;
 use autodie;
 
+use Carp::Always;
 use Getopt::Long qw/ GetOptions /;
 use Path::Tiny qw/ cwd path tempdir tempfile /;
 use Docker::CLI::Wrapper::Container v0.0.4 ();
@@ -27,7 +28,7 @@ sub mutate
 sub bn_mutate
 {
     my $ref = shift();
-    ${$ref} =~ s#-read-tolkiens-lotr(\.svg)\z#-see-a-meme-only-once$1#
+    ${$ref} =~ s#-read-tolkiens-lotr((?:\.svg)?\n?)\z#-see-a-meme-only-once$1#
         or die;
     return;
 }
@@ -59,10 +60,35 @@ sub run
             cmd => [ "cp", "-a", "$orig/", $new_base, ],
         },
     );
-    my $fn1 = "$new_base/one-does-not-simply-read-tolkiens-lotr.svg";
-    my $fn2 = $fn1;
+    my $fn1  = "$new_base/one-does-not-simply-read-tolkiens-lotr.svg";
+    my $sfn1 = "$new_base/one-does-not-simply.jpg";
+    my $sfn2 = "$new_base/Makefile";
+    my $fn2  = $fn1;
     bn_mutate( \$fn2 );
     rename( $fn1, $fn2 );
+    my $num_changed = 0;
+    path($sfn2)->edit_lines_utf8(
+        sub {
+            if (/\A BASE/x)
+            {
+                bn_mutate( \$_ );
+                ++$num_changed;
+            }
+            return $_;
+        },
+    );
+    die if $num_changed != 1;
+    $obj->do_system(
+        {
+            cmd => [ "git", "add", $fn2, $sfn1, $sfn2, ],
+        },
+    );
+
+    $obj->do_system(
+        {
+            cmd => [ "git", "clean", "-fx", "$new_base/", ],
+        },
+    );
 
     exit(0);
 }
