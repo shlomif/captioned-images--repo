@@ -5,7 +5,7 @@ Captioned Image - «One does not simply say "no" to an Alpha Female»
 Preview:
 --------
 
-image::./one-does-not-simply-read-tolkiens-lotr.svg.webp[One does not simply say "no" to an Alpha Female]
+image::./one-does-not-simply-see-a-meme-only-once.svg.webp[One does not simply say "no" to an Alpha Female]
 
 [id="about"]
 About:
@@ -14,7 +14,7 @@ About:
 This repository contains the sources for a captioned image. To view or
 edit it type:
 
-    inkscape ./one-does-not-simply-read-tolkiens-lotr.svg
+    inkscape ./one-does-not-simply-see-a-meme-only-once.svg
 
 To build everything use https://www.gnu.org/software/make/[GNU make] .
 

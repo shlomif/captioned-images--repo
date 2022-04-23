@@ -25,10 +25,20 @@ sub mutate
     return;
 }
 
+my $BASENAME = "read-tolkiens-lotr";
+
 sub bn_mutate
 {
     my $ref = shift();
-    ${$ref} =~ s#-read-tolkiens-lotr((?:\.svg)?\n?)\z#-see-a-meme-only-once$1#
+    ${$ref} =~ s#-\Q$BASENAME\E((?:\.svg)?\n?)\z#-see-a-meme-only-once$1#
+        or die;
+    return;
+}
+
+sub bn_mutate_not_only_at_the_end
+{
+    my $ref = shift();
+    ${$ref} =~ s#-\Q$BASENAME\E#-see-a-meme-only-once#
         or die;
     return;
 }
@@ -60,27 +70,45 @@ sub run
             cmd => [ "cp", "-a", "$orig/", $new_base, ],
         },
     );
-    my $fn1  = "$new_base/one-does-not-simply-read-tolkiens-lotr.svg";
-    my $sfn1 = "$new_base/one-does-not-simply.jpg";
-    my $sfn2 = "$new_base/Makefile";
-    my $fn2  = $fn1;
+    my $fn1        = "$new_base/one-does-not-simply-read-tolkiens-lotr.svg";
+    my $sfn1       = "$new_base/one-does-not-simply.jpg";
+    my $sfn2       = "$new_base/Makefile";
+    my $readme_fn1 = "$new_base/README.asciidoc";
+    my $fn2        = $fn1;
     bn_mutate( \$fn2 );
     rename( $fn1, $fn2 );
-    my $num_changed = 0;
-    path($sfn2)->edit_lines_utf8(
-        sub {
-            if (/\A BASE/x)
-            {
-                bn_mutate( \$_ );
-                ++$num_changed;
-            }
-            return $_;
-        },
-    );
-    die if $num_changed != 1;
+    {
+        my $num_changed = 0;
+        path($sfn2)->edit_lines_utf8(
+            sub {
+                if (/\A BASE/x)
+                {
+                    bn_mutate( \$_ );
+                    ++$num_changed;
+                }
+                return $_;
+            },
+        );
+        die if $num_changed != 1;
+    }
+    {
+        my $num_changed = 0;
+        path($readme_fn1)->edit_lines_utf8(
+            sub {
+                print;
+                if (/\Q$BASENAME\E/x)
+                {
+                    bn_mutate_not_only_at_the_end( \$_ );
+                    ++$num_changed;
+                }
+                return $_;
+            },
+        );
+        die "num_changed == $num_changed" if $num_changed != 2;
+    }
     $obj->do_system(
         {
-            cmd => [ "git", "add", $fn2, $sfn1, $sfn2, ],
+            cmd => [ "git", "add", $fn2, $sfn1, $readme_fn1, $sfn2, ],
         },
     );
 
