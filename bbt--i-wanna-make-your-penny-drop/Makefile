@@ -24,7 +24,7 @@ all: $(PNG) $(JPEG) $(WEBP)
 # all: $(NOBRANDING_PERSON_PNG) $(NOBRANDING_PERSON_WEBP) $(NOBRANDING_PERSON_JPEG) $(NOBRANDING_PERSON_PNG)
 
 $(PNG): $(SVG) $(EMBEDDED_PHOTO1__PATH)
-	inkscape --export-png=$@ --export-width=$(WIDTH) $<
+	inkscape --export-filename=$@ --export-width=$(WIDTH) $<
 	optipng $@
 
 $(DESTBASE_default).webp: $(WEBP)
