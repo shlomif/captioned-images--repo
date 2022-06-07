@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="357"
-     inkscape:cy="544"
+     inkscape:zoom="0.64035088"
+     inkscape:cx="356.83562"
+     inkscape:cy="570"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -90,10 +90,11 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.88px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0.405px">shlomifish.org</tspan></text>
     <g
        id="g29"
-       transform="matrix(0.9025,0,0,0.9025,-675.54051,466.67598)">
+       transform="matrix(0.9025,0,0,0.9025,-675.54051,466.67598)"
+       style="stroke-width:2.21828255;stroke-miterlimit:4;stroke-dasharray:none">
       <text
          xml:space="preserve"
-         style="font-weight:bold;font-size:96px;line-height:100px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-weight:bold;font-size:96px;line-height:100px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ffffff;stroke:#000000;stroke-width:2.21828255;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
          x="770.30029"
          y="311.78125"
          id="text19"><tspan
