@@ -27,6 +27,11 @@ $(PNG): $(SVG) $(EMBEDDED_PHOTO1__PATH)
 	inkscape --export-filename=$@ --export-width=$(WIDTH) $<
 	optipng $@
 
+p.svg: $(SVG)
+	xsltproc -o $@ remove-svg-branding.xslt $<
+
+all: p.svg
+
 $(DESTBASE_default).webp: $(WEBP)
 	cp -f $< $@
 
