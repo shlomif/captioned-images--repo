@@ -1,7 +1,7 @@
 <xsl:stylesheet version = '1.0'
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:h="http://www.w3.org/1999/xhtml"
-   xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:xsl='http://www.w3.org/1999/XSL/Transform'
     >
@@ -20,12 +20,5 @@
 
     <xsl:template match="//svg:text[./svg:tspan[text() = 'shlomifish.org']]">
     </xsl:template>
-
-    <!--
-        <link rel="stylesheet" href="https://www.shlomifish.org/style.css" media="screen" title="Normal"/>
-    <xsl:template match="h:section[@class='section']/h:div[@class='titlepage']">
-            <xsl:apply-templates select="./*"/>
-    </xsl:template>
-    -->
 
 </xsl:stylesheet>
