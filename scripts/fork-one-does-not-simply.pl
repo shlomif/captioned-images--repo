@@ -13,8 +13,8 @@ use 5.014;
 use autodie;
 
 use Carp::Always;
-use Getopt::Long qw/ GetOptions /;
-use Path::Tiny qw/ cwd path tempdir tempfile /;
+use Getopt::Long                           qw/ GetOptions /;
+use Path::Tiny                             qw/ cwd path tempdir tempfile /;
 use Docker::CLI::Wrapper::Container v0.0.4 ();
 
 sub dir_mutate
