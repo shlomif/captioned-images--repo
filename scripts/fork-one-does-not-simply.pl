@@ -20,7 +20,7 @@ use Docker::CLI::Wrapper::Container v0.0.4 ();
 sub dir_mutate
 {
     my $ref = shift();
-    ${$ref} =~ s#-Read-LotR\z#-See-a-Meme-Only-Once#
+    ${$ref} =~ s#-Read-LotR\z#-not-Know-who-Marilyn-Monroe-is#
         or die;
     return;
 }
@@ -30,7 +30,8 @@ my $BASENAME = "read-tolkiens-lotr";
 sub bn_mutate
 {
     my $ref = shift();
-    ${$ref} =~ s#-\Q$BASENAME\E((?:\.svg)?\n?)\z#-see-a-meme-only-once$1#
+    ${$ref} =~
+        s#-\Q$BASENAME\E((?:\.svg)?\n?)\z#-not-know-who-marilyn-monroe-is$1#
         or die;
     return;
 }
@@ -38,7 +39,7 @@ sub bn_mutate
 sub bn_mutate_not_only_at_the_end
 {
     my $ref = shift();
-    ${$ref} =~ s#-\Q$BASENAME\E#-see-a-meme-only-once#
+    ${$ref} =~ s#-\Q$BASENAME\E#-not-know-who-marilyn-monroe-is#
         or die;
     return;
 }
