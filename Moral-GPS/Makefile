@@ -18,7 +18,7 @@ NOBRANDING_PERSON_PNG = $(NOBRANDING_PERSON_SVG).png
 NOBRANDING_PERSON_JPEG = $(NOBRANDING_PERSON_SVG).jpg
 NOBRANDING_PERSON_WEBP = $(NOBRANDING_PERSON_SVG).webp
 
-EMBEDDED_PHOTO1__PATH = penny-5be95c4949e55231c3be2507d6be4b43.jpg
+EMBEDDED_PHOTO1__PATH = CHo24i_WwAAz13m.jpg
 
 all: $(PNG) $(JPEG) $(WEBP)
 # all: $(NOBRANDING_PERSON_PNG) $(NOBRANDING_PERSON_WEBP) $(NOBRANDING_PERSON_JPEG) $(NOBRANDING_PERSON_PNG)
@@ -28,7 +28,8 @@ $(PNG): $(SVG) $(EMBEDDED_PHOTO1__PATH)
 	optipng $@
 
 p.svg: $(SVG)
-	xsltproc -o $@ remove-svg-branding.xslt $<
+	# xsltproc -o $@ remove-svg-branding.xslt $<
+	cp -f $< $@
 
 all: p.svg
 
