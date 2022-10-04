@@ -41,7 +41,7 @@
      y="0" />
   <text
      xml:space="preserve"
-     style="font-weight:bold;font-size:96px;line-height:200px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="font-weight:normal;font-size:96px;line-height:200px;font-family:Impact;-inkscape-font-specification:'Impact, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill-opacity:1"
      x="-118.47594"
      y="117.04013"
      id="text7731"><tspan
@@ -57,4 +57,9 @@
        x="-118.47594"
        y="517.0401"
        id="tspan7735">M</tspan></text>
+  <use
+     x="0"
+     y="0"
+     xlink:href="#text7731"
+     id="use905" />
 </svg>
