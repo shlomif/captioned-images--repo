@@ -24,7 +24,7 @@
 
 import inkex
 from inkex import (
-    TextElement, FlowRoot, FlowPara, Tspan, TextPath, Rectangle
+    TextElement, FlowRoot, Tspan, Rectangle
 )
 
 
@@ -40,56 +40,49 @@ class TextSplit(inkex.EffectExtension):
             "-p", "--preserve", type=inkex.Boolean, default=True,
             help="Preserve original")
 
-    def split_lines(self, node):
+    def split_lines(self, node, textlines):
         """Returns a list of lines"""
         lines = []
         count = 1
 
         for elem in node:
-            if isinstance(elem, TextPath):
-                inkex.errormsg(
-                    "Text on path isn't supported. "
-                    "First remove text from path.")
-                break
-            elif not isinstance(elem, (FlowPara, Tspan)):
-                continue
+            pass
 
-            text = TextElement(**node.attrib)
+        text = TextElement(**node.attrib)
 
+        for elem in textlines:
             # handling flowed text nodes
-            if isinstance(node, FlowRoot):
+            if 1:  # isinstance(node, FlowRoot):
                 fontsize = node.style.get("font-size", "12px")
                 fs = self.svg.unittouu(fontsize)
 
                 # selects the flowRegion's child (svg:rect) to get @X and @Y
-                flowref = node.findone('svg:flowRegion')[0]
+                if 0:
+                    flowref = node.findone('svg:flowRegion')[0]
 
-                if isinstance(flowref, Rectangle):
-                    text.set("x", flowref.get("x"))
-                    text.set("y", str(float(flowref.get("y")) + fs * count))
-                    count += 1
-                else:
-                    inkex.debug(
-                        "This type of text element isn't supported. "
-                        "First unflow text.")
-                    break
+                    if isinstance(flowref, Rectangle):
+                        text.set("x", flowref.get("x"))
+                        text.set(
+                            "y", str(
+                                float(flowref.get("y")) + fs * count))
+                        count += 1
+                    else:
+                        inkex.debug(
+                            "This type of text element isn't supported. "
+                            "First unflow text.")
+                        break
 
                 # now let's convert flowPara into tspan
                 tspan = Tspan()
                 tspan.set("sodipodi:role", "line")
                 tspan.text = elem.text
-                text.append(tspan)
+                x = node.get("x")
+                y = node.get("y")
+                tspan.set("x", x)
+                tspan.set("y", y)
+                lines.append(tspan)
 
-            else:
-                from copy import copy
-                x = elem.get("x") or node.get("x")
-                y = elem.get("y") or node.get("y")
-
-                text.set("x", x)
-                text.set("y", y)
-                text.append(copy(elem))
-
-            lines.append(text)
+            # lines.append(text)
 
         return lines
 
@@ -183,24 +176,41 @@ class TextSplit(inkex.EffectExtension):
         """Applies the effect"""
 
         split_type = self.options.splittype
+        split_type = "line"
         preserve = self.options.preserve
+
+        class TextLine:
+            """docstring for TextLine"""
+            def __init__(self, text, height=16):
+                self.height = height
+                self.text = text
 
         # checks if the selected elements are text nodes
         for elem in self.svg.selection.get(TextElement, FlowRoot):
+            pass
+        # for elem in self.svg.get(TextElement, FlowRoot):
+        for elem in [self.svg.getElementById("text7731")]:
             if split_type == "line":
-                nodes = self.split_lines(elem)
+                textlines = []
+                textlines.append(TextLine(text="I AM NOT"))
+                textlines.append(TextLine(text="A MERE MORAL"))
+                nodes = self.split_lines(elem, textlines)
+                # assert 0
             elif split_type == "word":
                 nodes = self.split_words(elem)
             elif split_type == "letter":
                 nodes = self.split_letters(elem)
 
             for child in nodes:
-                elem.getparent().append(child)
+                # elem.getparent().append(child)
+                elem.append(child)
 
             # preserve original element
-            if not preserve and nodes:
-                parent = elem.getparent()
-                parent.remove(elem)
+            if False:
+                if not preserve and nodes:
+                    parent = elem.getparent()
+                    parent.remove(elem)
+        # assert 0
 
 
 if __name__ == '__main__':

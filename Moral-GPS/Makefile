@@ -23,6 +23,11 @@ EMBEDDED_PHOTO1__PATH = CHo24i_WwAAz13m.jpg
 all: $(PNG) $(JPEG) $(WEBP)
 # all: $(NOBRANDING_PERSON_PNG) $(NOBRANDING_PERSON_WEBP) $(NOBRANDING_PERSON_JPEG) $(NOBRANDING_PERSON_PNG)
 
+SCRIPT = generate_svg_meme.py
+
+$(SVG): source.svg $(SCRIPT)
+	PYTHONPATH="/usr/share/inkscape/extensions/" python3 $(SCRIPT) $< > $@
+
 $(PNG): $(SVG) $(EMBEDDED_PHOTO1__PATH)
 	inkscape --export-filename=$@ --export-width=$(WIDTH) $<
 	optipng $@
