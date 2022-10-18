@@ -18,7 +18,8 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
-# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+# 02110-1301, USA.
 #
 
 import inkex
@@ -26,12 +27,17 @@ from inkex import (
     TextElement, FlowRoot, FlowPara, Tspan, TextPath, Rectangle
 )
 
+
 class TextSplit(inkex.EffectExtension):
     """Split text up."""
     def add_arguments(self, pars):
-        pars.add_argument("--tab", help="The selected UI-tab when OK was pressed")
-        pars.add_argument("-s", "--splittype", default="word", help="type of split")
-        pars.add_argument("-p", "--preserve", type=inkex.Boolean, default=True,\
+        pars.add_argument(
+            "--tab",
+            help="The selected UI-tab when OK was pressed")
+        pars.add_argument(
+            "-s", "--splittype", default="word", help="type of split")
+        pars.add_argument(
+            "-p", "--preserve", type=inkex.Boolean, default=True,
             help="Preserve original")
 
     def split_lines(self, node):
@@ -41,7 +47,9 @@ class TextSplit(inkex.EffectExtension):
 
         for elem in node:
             if isinstance(elem, TextPath):
-                inkex.errormsg("Text on path isn't supported. First remove text from path.")
+                inkex.errormsg(
+                    "Text on path isn't supported. "
+                    "First remove text from path.")
                 break
             elif not isinstance(elem, (FlowPara, Tspan)):
                 continue
@@ -61,7 +69,9 @@ class TextSplit(inkex.EffectExtension):
                     text.set("y", str(float(flowref.get("y")) + fs * count))
                     count += 1
                 else:
-                    inkex.debug("This type of text element isn't supported. First unflow text.")
+                    inkex.debug(
+                        "This type of text element isn't supported. "
+                        "First unflow text.")
                     break
 
                 # now let's convert flowPara into tspan
@@ -108,7 +118,8 @@ class TextSplit(inkex.EffectExtension):
             x = float(line.get("x"))
             y = line.get("y")
 
-            # gets the font size. if element doesn't have a style attribute, it assumes font-size = 12px
+            # gets the font size. if element doesn't have a style attribute,
+            # it assumes font-size = 12px
             fontsize = line.style.get("font-size", "12px")
             fs = self.svg.unittouu(fontsize)
 
@@ -149,7 +160,8 @@ class TextSplit(inkex.EffectExtension):
             x = float(word.get("x"))
             y = word.get("y")
 
-            # gets the font size. If element doesn't have a style attribute, it assumes font-size = 12px
+            # gets the font size. If element doesn't have a style
+            # attribute, it assumes font-size = 12px
             fontsize = word.style.get("font-size", "12px")
             fs = self.svg.unittouu(fontsize)
 
@@ -189,6 +201,7 @@ class TextSplit(inkex.EffectExtension):
             if not preserve and nodes:
                 parent = elem.getparent()
                 parent.remove(elem)
+
 
 if __name__ == '__main__':
     TextSplit().run()
