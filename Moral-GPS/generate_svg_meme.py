@@ -201,6 +201,7 @@ class TextSplit(inkex.EffectExtension):
             elif split_type == "letter":
                 nodes = self.split_letters(elem)
 
+            elem.remove_all()
             for child in nodes:
                 # elem.getparent().append(child)
                 elem.append(child)
