@@ -197,7 +197,8 @@ class TextSplit(inkex.EffectExtension):
                 textlines.append(TextLine(text="COMPASS!"))
                 textlines.append(TextLine(text="I AM A MORAL"))
                 textlines.append(TextLine(text="GLOBAL"))
-                textlines.append(TextLine(text="POSITIONING SYSTEM"))
+                textlines.append(TextLine(text="POSITIONING"))
+                textlines.append(TextLine(text="SYSTEM!"))
                 nodes = self.split_lines(elem, textlines)
                 # assert 0
             elif split_type == "word":
