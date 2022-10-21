@@ -219,7 +219,7 @@ class TextSplit(inkex.EffectExtension):
                     # elem.getparent().append(child)
                     elem2.append(child)
                 # assert 0
-                y = elem2.y + 180
+                y = elem2.y + 170
                 elem2.set("y", str(y))
                 self.svg.add(elem2)
             elif split_type == "word":
