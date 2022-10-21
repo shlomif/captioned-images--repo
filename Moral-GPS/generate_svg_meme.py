@@ -191,25 +191,41 @@ class TextSplit(inkex.EffectExtension):
         # for elem in self.svg.get(TextElement, FlowRoot):
         for elem in [self.svg.getElementById("text7731")]:
             if split_type == "line":
+                # elem2 = elem.clone()
+                if 1:
+                    elem2 = elem.copy()
+                else:
+                    elem2 = TextElement()
+                # elem2.id("text2")
                 textlines = []
                 textlines.append(TextLine(text="I AM NOT A"))
                 textlines.append(TextLine(text="MERE MORAL"))
                 textlines.append(TextLine(text="COMPASS!"))
+                nodes = self.split_lines(elem, textlines)
+                elem.remove_all()
+                for child in nodes:
+                    # elem.getparent().append(child)
+                    elem.append(child)
+
+                textlines = []
                 textlines.append(TextLine(text="I AM A MORAL"))
                 textlines.append(TextLine(text="GLOBAL"))
                 textlines.append(TextLine(text="POSITIONING"))
                 textlines.append(TextLine(text="SYSTEM!"))
-                nodes = self.split_lines(elem, textlines)
+                elem2.remove_all()
+                nodes = self.split_lines(elem2, textlines)
+                elem2.remove_all()
+                for child in nodes:
+                    # elem.getparent().append(child)
+                    elem2.append(child)
                 # assert 0
+                y = elem2.y + 180
+                elem2.set("y", str(y))
+                self.svg.add(elem2)
             elif split_type == "word":
                 nodes = self.split_words(elem)
             elif split_type == "letter":
                 nodes = self.split_letters(elem)
-
-            elem.remove_all()
-            for child in nodes:
-                # elem.getparent().append(child)
-                elem.append(child)
 
             # preserve original element
             if False:
