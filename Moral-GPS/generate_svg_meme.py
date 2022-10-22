@@ -192,7 +192,7 @@ class TextSplit(inkex.EffectExtension):
             """docstring for TextLine"""
             def __init__(self, text, height=16):
                 self.height = height
-                self.text = text
+                self.text = text.upper()
 
         # checks if the selected elements are text nodes
         for elem in self.svg.selection.get(TextElement, FlowRoot):
@@ -207,16 +207,16 @@ class TextSplit(inkex.EffectExtension):
                     elem2 = TextElement()
                 # elem2.id("text2")
                 textlines = []
-                textlines.append(TextLine(text="I AM NOT A"))
-                textlines.append(TextLine(text="MERE MORAL"))
-                textlines.append(TextLine(text="COMPASS!"))
+                textlines.append(TextLine(text="I am not a"))
+                textlines.append(TextLine(text="mere moral"))
+                textlines.append(TextLine(text="compass!"))
                 self.set_lines(elem, textlines)
 
                 textlines = []
-                textlines.append(TextLine(text="I AM A MORAL"))
-                textlines.append(TextLine(text="GLOBAL"))
-                textlines.append(TextLine(text="POSITIONING"))
-                textlines.append(TextLine(text="SYSTEM!"))
+                textlines.append(TextLine(text="I am a moral"))
+                textlines.append(TextLine(text="Global"))
+                textlines.append(TextLine(text="Positioning"))
+                textlines.append(TextLine(text="System!"))
                 elem2.remove_all()
                 self.set_lines(elem2, textlines)
 
