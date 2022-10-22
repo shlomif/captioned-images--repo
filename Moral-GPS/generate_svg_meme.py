@@ -24,7 +24,7 @@
 
 import inkex
 from inkex import (
-    TextElement, Tspan, Rectangle
+    TextElement, Tspan
 )
 
 
@@ -43,44 +43,21 @@ class TextSplit(inkex.EffectExtension):
     def split_lines(self, node, textlines):
         """Returns a list of lines"""
         lines = []
-        count = 1
-
-        for elem in node:
-            pass
-
-        text = TextElement(**node.attrib)
 
         for elem in textlines:
             # handling flowed text nodes
-            if 1:  # isinstance(node, FlowRoot):
-                fontsize = node.style.get("font-size", "12px")
-                fs = self.svg.unittouu(fontsize)
+            # fontsize = node.style.get("font-size", "12px")
+            # fs = self.svg.unittouu(fontsize)
 
-                # selects the flowRegion's child (svg:rect) to get @X and @Y
-                if 0:
-                    flowref = node.findone('svg:flowRegion')[0]
-
-                    if isinstance(flowref, Rectangle):
-                        text.set("x", flowref.get("x"))
-                        text.set(
-                            "y", str(
-                                float(flowref.get("y")) + fs * count))
-                        count += 1
-                    else:
-                        inkex.debug(
-                            "This type of text element isn't supported. "
-                            "First unflow text.")
-                        break
-
-                # now let's convert flowPara into tspan
-                tspan = Tspan()
-                tspan.set("sodipodi:role", "line")
-                tspan.text = elem.text
-                x = node.get("x")
-                y = node.get("y")
-                tspan.set("x", x)
-                tspan.set("y", y)
-                lines.append(tspan)
+            # now let's convert flowPara into tspan
+            tspan = Tspan()
+            tspan.set("sodipodi:role", "line")
+            tspan.text = elem.text
+            x = node.get("x")
+            y = node.get("y")
+            tspan.set("x", x)
+            tspan.set("y", y)
+            lines.append(tspan)
 
             # lines.append(text)
 
