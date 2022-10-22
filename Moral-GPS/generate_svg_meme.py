@@ -24,7 +24,7 @@
 
 import inkex
 from inkex import (
-    TextElement, FlowRoot, Tspan, Rectangle
+    TextElement, Tspan, Rectangle
 )
 
 
@@ -86,92 +86,6 @@ class TextSplit(inkex.EffectExtension):
 
         return lines
 
-    def split_words(self, node):
-        """Returns a list of words"""
-        words = []
-
-        # Function to recursively extract text
-        def plain_str(elem):
-            words = []
-            if elem.text:
-                words.append(elem.text)
-            for n in elem:
-                words.extend(plain_str(n))
-                if n.tail:
-                    words.append(n.tail)
-            return words
-
-        # if text has more than one line, iterates through elements
-        lines = self.split_lines(node)
-        if not lines:
-            return words
-
-        for line in lines:
-            # gets the position of text node
-            x = float(line.get("x"))
-            y = line.get("y")
-
-            # gets the font size. if element doesn't have a style attribute,
-            # it assumes font-size = 12px
-            fontsize = line.style.get("font-size", "12px")
-            fs = self.svg.unittouu(fontsize)
-
-            # extract and returns a list of words
-            words_list = "".join(plain_str(line)).split()
-            prev_len = 0
-
-            # creates new text nodes for each string in words_list
-            for word in words_list:
-                tspan = Tspan()
-                tspan.text = word
-
-                text = TextElement(**line.attrib)
-                tspan.set('sodipodi:role', "line")
-
-                # positioning new text elements
-                x = x + prev_len * fs
-                prev_len = len(word)
-                text.set("x", str(x))
-                text.set("y", str(y))
-
-                text.append(tspan)
-                words.append(text)
-
-        return words
-
-    def split_letters(self, node):
-        """Returns a list of letters"""
-
-        letters = []
-
-        words = self.split_words(node)
-        if not words:
-            return letters
-
-        for word in words:
-
-            x = float(word.get("x"))
-            y = word.get("y")
-
-            # gets the font size. If element doesn't have a style
-            # attribute, it assumes font-size = 12px
-            fontsize = word.style.get("font-size", "12px")
-            fs = self.svg.unittouu(fontsize)
-
-            # for each letter in element string
-            for letter in word[0].text:
-                tspan = Tspan()
-                tspan.text = letter
-
-                text = TextElement(**node.attrib)
-                text.set("x", str(x))
-                text.set("y", str(y))
-                x += fs
-
-                text.append(tspan)
-                letters.append(text)
-        return letters
-
     def set_lines(self, elem, textlines):
         """docstring for set_lines"""
 
@@ -184,10 +98,6 @@ class TextSplit(inkex.EffectExtension):
     def effect(self):
         """Applies the effect"""
 
-        split_type = self.options.splittype
-        split_type = "line"
-        preserve = self.options.preserve
-
         class TextLine:
             """docstring for TextLine"""
             def __init__(self, text, height=16):
@@ -195,45 +105,30 @@ class TextSplit(inkex.EffectExtension):
                 self.text = text.upper()
 
         # checks if the selected elements are text nodes
-        for elem in self.svg.selection.get(TextElement, FlowRoot):
-            pass
-        # for elem in self.svg.get(TextElement, FlowRoot):
+        # for elem in self.svg.selection.get(TextElement, FlowRoot):
         for elem in [self.svg.getElementById("text7731")]:
-            if split_type == "line":
-                # elem2 = elem.clone()
-                if 1:
-                    elem2 = elem.copy()
-                else:
-                    elem2 = TextElement()
-                # elem2.id("text2")
-                textlines = []
-                textlines.append(TextLine(text="I am not a"))
-                textlines.append(TextLine(text="mere moral"))
-                textlines.append(TextLine(text="compass!"))
-                self.set_lines(elem, textlines)
+            if 1:
+                elem2 = elem.copy()
+            else:
+                elem2 = TextElement()
 
-                textlines = []
-                textlines.append(TextLine(text="I am a moral"))
-                textlines.append(TextLine(text="Global"))
-                textlines.append(TextLine(text="Positioning"))
-                textlines.append(TextLine(text="System!"))
-                elem2.remove_all()
-                self.set_lines(elem2, textlines)
+            textlines = []
+            textlines.append(TextLine(text="I am not a"))
+            textlines.append(TextLine(text="mere moral"))
+            textlines.append(TextLine(text="compass!"))
+            self.set_lines(elem, textlines)
 
-                y = elem2.y + 170
-                elem2.set("y", str(y))
-                self.svg.add(elem2)
-            elif split_type == "word":
-                nodes = self.split_words(elem)
-            elif split_type == "letter":
-                nodes = self.split_letters(elem)
+            textlines = []
+            textlines.append(TextLine(text="I am a moral"))
+            textlines.append(TextLine(text="Global"))
+            textlines.append(TextLine(text="Positioning"))
+            textlines.append(TextLine(text="System!"))
+            elem2.remove_all()
+            self.set_lines(elem2, textlines)
 
-            # preserve original element
-            if False:
-                if not preserve and nodes:
-                    parent = elem.getparent()
-                    parent.remove(elem)
-        # assert 0
+            y = elem2.y + 170
+            elem2.set("y", str(y))
+            self.svg.add(elem2)
 
 
 if __name__ == '__main__':
