@@ -172,6 +172,15 @@ class TextSplit(inkex.EffectExtension):
                 letters.append(text)
         return letters
 
+    def set_lines(self, elem, textlines):
+        """docstring for set_lines"""
+
+        def _set_childs(elem, nodes):
+            elem.remove_all()
+            elem.add(*nodes)
+        nodes = self.split_lines(elem, textlines)
+        _set_childs(elem, nodes)
+
     def effect(self):
         """Applies the effect"""
 
@@ -185,13 +194,6 @@ class TextSplit(inkex.EffectExtension):
                 self.height = height
                 self.text = text
 
-        def _set_childs(elem, nodes):
-            elem.remove_all()
-            elem.add(*nodes)
-            return
-            for child in nodes:
-                # elem.getparent().append(child)
-                elem.append(child)
         # checks if the selected elements are text nodes
         for elem in self.svg.selection.get(TextElement, FlowRoot):
             pass
@@ -208,8 +210,7 @@ class TextSplit(inkex.EffectExtension):
                 textlines.append(TextLine(text="I AM NOT A"))
                 textlines.append(TextLine(text="MERE MORAL"))
                 textlines.append(TextLine(text="COMPASS!"))
-                nodes = self.split_lines(elem, textlines)
-                _set_childs(elem, nodes)
+                self.set_lines(elem, textlines)
 
                 textlines = []
                 textlines.append(TextLine(text="I AM A MORAL"))
@@ -217,8 +218,7 @@ class TextSplit(inkex.EffectExtension):
                 textlines.append(TextLine(text="POSITIONING"))
                 textlines.append(TextLine(text="SYSTEM!"))
                 elem2.remove_all()
-                nodes = self.split_lines(elem2, textlines)
-                _set_childs(elem2, nodes)
+                self.set_lines(elem2, textlines)
 
                 y = elem2.y + 170
                 elem2.set("y", str(y))
