@@ -44,6 +44,9 @@ class TextSplit(inkex.EffectExtension):
         """Returns a list of lines"""
         lines = []
 
+        # x, y stay the same - probably wrong
+        x = node.get("x")
+        y = node.get("y")
         for elem in textlines:
             # handling flowed text nodes
             # fontsize = node.style.get("font-size", "12px")
@@ -53,13 +56,9 @@ class TextSplit(inkex.EffectExtension):
             tspan = Tspan()
             tspan.set("sodipodi:role", "line")
             tspan.text = elem.text
-            x = node.get("x")
-            y = node.get("y")
             tspan.set("x", x)
             tspan.set("y", y)
             lines.append(tspan)
-
-            # lines.append(text)
 
         return lines
 
@@ -86,6 +85,7 @@ class TextSplit(inkex.EffectExtension):
         for elem in [self.svg.getElementById("text7731")]:
             if 1:
                 elem2 = elem.copy()
+                elem2.remove_all()
             else:
                 elem2 = TextElement()
 
@@ -100,7 +100,6 @@ class TextSplit(inkex.EffectExtension):
             textlines.append(TextLine(text="Global"))
             textlines.append(TextLine(text="Positioning"))
             textlines.append(TextLine(text="System!"))
-            elem2.remove_all()
             self.set_lines(elem2, textlines)
 
             y = elem2.y + 170
