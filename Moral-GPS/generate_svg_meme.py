@@ -102,7 +102,7 @@ class TextSplit(inkex.EffectExtension):
             textlines.append(TextLine(text="System!"))
             self.set_lines(elem2, textlines)
 
-            y = elem2.y + 170
+            y = elem2.y + 160
             elem2.set("y", str(y))
             self.svg.add(elem2)
 
