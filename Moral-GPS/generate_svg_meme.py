@@ -46,8 +46,9 @@ class TextSplit(inkex.EffectExtension):
 
         # x, y stay the same - probably wrong
         x = node.get("x")
-        y = node.get("y")
-        for elem in textlines:
+        yi = starty = int(node.get("y"))
+        line_height = 45
+        for idx, elem in enumerate(textlines):
             # handling flowed text nodes
             # fontsize = node.style.get("font-size", "12px")
             # fs = self.svg.unittouu(fontsize)
@@ -57,8 +58,12 @@ class TextSplit(inkex.EffectExtension):
             tspan.set("sodipodi:role", "line")
             tspan.text = elem.text
             tspan.set("x", x)
+            yi = starty + idx * line_height
+            y = str(yi)
             tspan.set("y", y)
             lines.append(tspan)
+
+            yi += 14
 
         return lines
 
@@ -100,10 +105,11 @@ class TextSplit(inkex.EffectExtension):
             textlines.append(TextLine(text="Global"))
             textlines.append(TextLine(text="Positioning"))
             textlines.append(TextLine(text="System!"))
+            y = elem2.y + 160
+            yi = int(y)
+            elem2.set("y", str(yi))
             self.set_lines(elem2, textlines)
 
-            y = elem2.y + 160
-            elem2.set("y", str(y))
             self.svg.add(elem2)
 
 
