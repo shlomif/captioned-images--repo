@@ -47,7 +47,9 @@ class TextSplit(inkex.EffectExtension):
         # x, y stay the same - probably wrong
         x = node.get("x")
         yi = starty = int(node.get("y"))
-        line_height = 45
+        height = node.style.get("line-height", "45px")
+        line_height = self.svg.unittouu(height)
+        # line_height = 45
         for idx, elem in enumerate(textlines):
             # handling flowed text nodes
             # fontsize = node.style.get("font-size", "12px")
