@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.64035088"
-     inkscape:cx="356.05479"
-     inkscape:cy="570"
+     inkscape:zoom="0.34679335"
+     inkscape:cx="513.27397"
+     inkscape:cy="1052.5"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -66,7 +66,7 @@
     <image
        xlink:href="mr-t--0777d5ee0f4dee5a88fafaf140e2a058e2841e47_hq.jpg"
        x="0"
-       y="1021"
+       y="767"
        id="image156"
        style="image-rendering:optimizeQuality"
        preserveAspectRatio="none"
@@ -92,18 +92,37 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.88px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0.405px">shlomifish.org</tspan></text>
     <g
        id="g29"
-       transform="matrix(0.722,0,0,0.722,-436.76123,780.10337)"
+       transform="matrix(0.722,0,0,0.722,-436.76123,526.10337)"
        style="stroke-width:2.21828;stroke-miterlimit:4;stroke-dasharray:none">
       <text
          xml:space="preserve"
          style="font-weight:bold;font-size:96px;line-height:100px;font-family:Impact;-inkscape-font-specification:'Impact, Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#ffffff;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="770.30029"
+         x="759.61279"
          y="311.78125"
          id="text19"><tspan
            sodipodi:role="line"
            id="tspan17"
-           x="770.30029"
-           y="311.78125">HOW TO WIN AT STRIP-POKER</tspan></text>
+           x="759.61279"
+           y="311.78125">HOW TO WIN AT STRIP-POKER:</tspan></text>
+    </g>
+    <g
+       id="g299"
+       transform="matrix(0.722,0,0,0.722,-436.76123,1658.1034)"
+       style="stroke-width:2.21828;stroke-miterlimit:4;stroke-dasharray:none">
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:96px;line-height:100px;font-family:Impact;-inkscape-font-specification:'Impact, Bold';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="1312.9722"
+         y="311.78125"
+         id="text297"><tspan
+           sodipodi:role="line"
+           id="tspan295"
+           x="1312.9722"
+           y="311.78125">I PITY THE FOOL WHO</tspan><tspan
+           sodipodi:role="line"
+           x="1312.9722"
+           y="411.78125"
+           id="tspan403">DOESN'T ACCESSORIZE!</tspan></text>
     </g>
   </g>
 </svg>
