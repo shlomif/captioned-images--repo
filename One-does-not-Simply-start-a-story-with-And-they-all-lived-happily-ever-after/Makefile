@@ -11,7 +11,6 @@ WEBP = $(DESTBASE).webp
 EMBEDDED_PHOTO1__PATH = one-does-not-simply.jpg
 
 all: $(PNG) $(JPEG) $(WEBP)
-# all: $(NOBRANDING_PERSON_PNG) $(NOBRANDING_PERSON_WEBP) $(NOBRANDING_PERSON_JPEG) $(NOBRANDING_PERSON_PNG)
 
 $(PNG): $(SVG) $(EMBEDDED_PHOTO1__PATH)
 	inkscape --export-filename=$@ --export-width=$(WIDTH) $<
@@ -26,11 +25,10 @@ $(WEBP): $(PNG)
 $(JPEG): $(PNG)
 	gm convert $< $@
 
+_CLEAN_IMAGES_PREFIX = One-does-not
+
 clean:
-	rm -f emma-*.png emma-*.jpg emma-*.webp
+	rm -f $(_CLEAN_IMAGES_PREFIX)*.png $(_CLEAN_IMAGES_PREFIX)*.jpg $(_CLEAN_IMAGES_PREFIX)*.webp
 
 upload: all
 	sky -x up $(WEBP)
-
-# upload: all
-#	rsync --progress -v -a --inplace human-hacking-field-guide-logo.svg hhfg-ad.svg hhfg-ad.svg.png $(__HOMEPAGE_REMOTE_PATH)/hhfg-graphics-demo/
