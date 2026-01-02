@@ -8,11 +8,6 @@ PNG = $(DESTBASE).png
 JPEG = $(DESTBASE).jpg
 WEBP = $(DESTBASE).webp
 
-NOBRANDING_PERSON_SVG = gotta-be-a-badass-to-play-one--3rd-tense--wo-hashtag-and-username.svg
-NOBRANDING_PERSON_PNG = $(NOBRANDING_PERSON_SVG).png
-NOBRANDING_PERSON_JPEG = $(NOBRANDING_PERSON_SVG).jpg
-NOBRANDING_PERSON_WEBP = $(NOBRANDING_PERSON_SVG).webp
-
 EMBEDDED_PHOTO1__PATH = CHo24i_WwAAz13m.jpg
 
 all: $(PNG) $(JPEG) $(WEBP)
@@ -46,16 +41,6 @@ $(WEBP): $(PNG)
 	gm convert $< $@
 
 $(JPEG): $(PNG)
-	gm convert $< $@
-
-$(NOBRANDING_PERSON_PNG): $(NOBRANDING_PERSON_SVG) $(EMBEDDED_PHOTO1__PATH)
-	inkscape --export-png=$@ --export-width=$(WIDTH) $<
-	optipng $@
-
-$(NOBRANDING_PERSON_WEBP): $(NOBRANDING_PERSON_PNG)
-	gm convert $< $@
-
-$(NOBRANDING_PERSON_JPEG): $(NOBRANDING_PERSON_PNG)
 	gm convert $< $@
 
 $(PHOTO_INTERIM1): $(PHOTO_BASE).jpg
