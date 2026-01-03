@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    version="1.1"
@@ -21,9 +22,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.85580305"
-     inkscape:cx="452.79109"
-     inkscape:cy="425.91575"
+     inkscape:zoom="0.70019531"
+     inkscape:cx="512"
+     inkscape:cy="426.30962"
      inkscape:current-layer="svg2"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -41,13 +42,13 @@
      preserveAspectRatio="none"
      xlink:href="file:///home/shlomif/Docs/homepage/homepage/trunk--clones/captioned-images--repo/pesek-zman-logo-rotated/72917893-cropped.png"
      id="image1"
-     x="230"
-     y="376" /><image
+     x="516"
+     y="172" /><image
      width="446"
      height="100"
      preserveAspectRatio="none"
      xlink:href="file:///home/shlomif/Docs/homepage/homepage/trunk--clones/captioned-images--repo/pesek-zman-logo-rotated/72917893-cropped.png"
      id="image2"
-     x="-676"
+     x="-962"
      y="-624"
      transform="scale(-1)" /></svg>
