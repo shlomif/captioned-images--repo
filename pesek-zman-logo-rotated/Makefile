@@ -8,14 +8,14 @@ PNG = $(DESTBASE).png
 JPEG = $(DESTBASE).jpg
 WEBP = $(DESTBASE).webp
 
-EMBEDDED_PHOTO1__PATH = CHo24i_WwAAz13m.jpg
+EMBEDDED_PHOTO1__PATH = 72917893-cropped.png
 
 all: $(PNG) $(JPEG) $(WEBP)
 # all: $(NOBRANDING_PERSON_PNG) $(NOBRANDING_PERSON_WEBP) $(NOBRANDING_PERSON_JPEG) $(NOBRANDING_PERSON_PNG)
 
-SCRIPT = generate_svg_meme.py
+# SCRIPT = generate_svg_meme.py
 
-$(SVG): source.svg $(SCRIPT)
+$(SVG): source.svg
 	# PYTHONPATH="/usr/share/inkscape/extensions/" python3 $(SCRIPT) $< > $@
 	cp -f $< $@
 
@@ -23,10 +23,10 @@ $(PNG): $(SVG) $(EMBEDDED_PHOTO1__PATH)
 	inkscape --export-filename=$@ --export-width=$(WIDTH) $<
 	optipng $@
 
-72917893-cropped.png: 72917893.png
+$(EMBEDDED_PHOTO1__PATH): 72917893.png
 	magick $< -gravity Center -crop 446x100+0+0 $@
 
-all: 72917893-cropped.png
+all: $(EMBEDDED_PHOTO1__PATH)
 
 p.svg: $(SVG)
 	# xsltproc -o $@ remove-svg-branding.xslt $<
