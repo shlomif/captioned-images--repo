@@ -42,16 +42,16 @@
      xlink:href="file:///home/shlomif/Docs/homepage/homepage/trunk--clones/captioned-images--repo/pesek-zman-logo-rotated/72917893-cropped.png"
      id="image1"
      x="516"
-     y="172" /><image
+     y="159.53247" /><image
      width="446"
      height="100"
      preserveAspectRatio="none"
      xlink:href="file:///home/shlomif/Docs/homepage/homepage/trunk--clones/captioned-images--repo/pesek-zman-logo-rotated/72917893-cropped.png"
      id="image2"
      x="-962"
-     y="-624"
+     y="-574.58862"
      transform="scale(-1)" />
      <text style="font: 50px Arial Black;" x="40" y="60">Pesek Zman’s Logo:</text>
-     <text style="font: 50px Arial Black;" x="40" y="330">when rotated 180°</text>
+     <text style="font: 50px Arial Black;" x="40" y="384.96826">when rotated 180°</text>
      <text style="font: 50px Arial Black;" x="40" y="700">reads “go dial” in English</text>
      </svg>
