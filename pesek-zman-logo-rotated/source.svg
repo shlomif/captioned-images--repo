@@ -53,4 +53,5 @@
      transform="scale(-1)" />
      <text style="font: 50px Arial Black;" x="40" y="60">Pesek Zman’s Logo:</text>
      <text style="font: 50px Arial Black;" x="40" y="330">when rotated 180°</text>
+     <text style="font: 50px Arial Black;" x="40" y="700">reads “go dial” in English</text>
      </svg>
