@@ -50,4 +50,7 @@
      id="image2"
      x="-962"
      y="-624"
-     transform="scale(-1)" /><text style="font: 50px Arial Black;" x="40" y="60">Pesek Zman’s Logo:</text></svg>
+     transform="scale(-1)" />
+     <text style="font: 50px Arial Black;" x="40" y="60">Pesek Zman’s Logo:</text>
+     <text style="font: 50px Arial Black;" x="40" y="330">when rotated 180°</text>
+     </svg>
